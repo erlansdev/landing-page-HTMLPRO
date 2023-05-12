@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #01010f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header img {
+    width: 50px;
+}
+
+.header span {
+    color: #006eff;
+}
+
+/* SECTION INFO */
+
+.sectionInfo {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    padding: 40px 0px 100px 0px;
+}
+
+.imgInfo {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.rightInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.rightInfo h1 {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0px 0px 25px 0px;
+}
+
+.btnInfo {
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    background-color: #006eff;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .9s;
+}
+
+.btnInfo:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* SECTION CARDS */
+
+.textCard {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.sectionCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sectionContentCard {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #0e1630;
+    padding: 20px;
+    width: 240px;
+    height: 230px;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 2px 0px #006eff;
+    font-size: 1rem;
+}
+
+.sectionContentCard img {
+    width: 80px;
+}
+
+/* SECTION DOWNLOAD */
+
+.downloadSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px 0px 0px;
+}
+
+.downloadSection h2 {
+    color: #006eff;
+    font-size: 1.6rem;
+    padding: 30px 0px 10px 0px;
+}
+
+.downloadSection p {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 200;
+    padding: 0px 0px 50px 0px;
+}
+
+.btnDownload {
+    background-color: #515152;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.btnAbsolute {
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    background-color: #006eff;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .9s;
+}
+
+.btnAbsolute:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #020214;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.footer a {
+    color: #006eff;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 1024px) {
+    .sectionInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sectionInfo img {
+        width: 300px;
+    }
+
+    .rightInfo {
+        width: 50%;
+    }
+
+    .rightInfo h1 {
+        font-size: 1.6rem;
+    }
+
+    .btnDownload {
+        font-size: .75rem;
+    }
+}
